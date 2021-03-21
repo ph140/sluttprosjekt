@@ -38,7 +38,7 @@ for i in count(0):
     time.append(i+1)
 
 # Skriver hvor lang tid det tar
-print(f'Halveis etter {time[-1]} sekunder.')
+print(f'Halveis etter {time[-1]} sekunder')
 
 # Plotter grafen
 plt.plot(time, model, 'r-')
