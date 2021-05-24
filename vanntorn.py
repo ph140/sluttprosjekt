@@ -43,4 +43,4 @@ for j in range(50):
     sheet1.write(j, 0, str(time[-1]/10))  # Tid kolonne 1
     sheet1.write(j, 1, str(h))  # Vannstand kolonne 2
 
-wb.save('example.xls')
+wb.save('example.xls')  # Lagrer excel-dokumentet
