@@ -23,7 +23,7 @@ wb = Workbook()
 sheet1 = wb.add_sheet('Sheet 1')
 
 for j in range(50):
-    h = 1+j*10  # Hoyde/m  Kjører gjennom 50 forskjellige verdier
+    h = 1+j  # Hoyde/m  Kjører gjennom 50 forskjellige verdier
 
     # Definere lister som trengs
     time = [0]  # Tid/ms
@@ -40,7 +40,7 @@ for j in range(50):
         time.append(i+1)
 
     # Skriver ut informasjonen til excel
-    sheet1.write(j, 0, str(time[-1]/10))  # Tid kolonne 1
-    sheet1.write(j, 1, str(h))  # Vannstand kolonne 2
+    sheet1.write(j, 0, str(h))  # Vannstand kolonne 1
+    sheet1.write(j, 1, str(time[-1]/10))  # Tid kolonne 2
 
 wb.save('example.xls')  # Lagrer excel-dokumentet
